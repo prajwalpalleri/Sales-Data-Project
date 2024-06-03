@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Sales-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sales-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="sales-left">
+            <div class="sales-left-title">
+                <h2>Sales Data</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="75cc63ef-d7c9-4bcc-8569-d545e4f408ba">
+            <input type="hidden" name="subject" value="New Sales Form Submission">
+            <input type="hidden" name="redirect" value="http://127.0.0.1:3000/sales form/redirected page/index.html">
+            <input type="hidden" name="message" value="You have received a new sales submission:">
+
+            <input type="text" name="name" placeholder="Your Name" class="sales-inputs" required>
+            <input type="email" name="email" placeholder="Your email" class="sales-inputs" required>
+            <input type="date" name="sales_date" class="sales-inputs" required>
+            <input type="number" name="sales_amount" class="sales-inputs" placeholder="Sales" required>
+            <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+            <p>The sales data will be sent to your email</p>
+        </form>
+        <div class="sales-right">
+            <img src="assets/right_img.png" alt="business image" width="400">
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Prajwal Palleri. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

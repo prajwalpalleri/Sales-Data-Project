@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(#7be3f6, #79fae2);
+}
+
+.sales-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sales-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.sales-left-title h2 {
+    font-weight: 600;
+    color: #fa7979;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.sales-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #fa7979;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sales-inputs {
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.sales-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.sales-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.sales-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.sales-left button img {
+    height: 15px;
+}
+
+p {
+    color: rgb(136, 98, 197);
+}
+
+.footer {
+    margin-top: auto;
+    padding-top: 10;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width:800px) {
+    .sales-inputs {
+        width: 80vw;
+    }
+
+    .sales-right {
+        display: none;
+    }
+}
